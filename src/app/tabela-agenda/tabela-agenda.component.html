@@ -1,0 +1,22 @@
+<table class="table">
+  <thead>
+      <tr>
+          <th scope="col">ID</th>
+          <th scope="col">Título</th>
+          <th scope="col">Nota</th>
+          <th scope="col">Artista</th>
+          <th scope="col">Gênero</th>
+          <th scope="col">Ano</th>
+      </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let musica of musicas">
+      <th scope="row">{{musica.id}}</th>
+      <td>{{musica.name}}</td>
+      <td>{{musica.note}}</td>
+      <td>{{musica.category}}</td>
+      <td>{{musica.artist}}</td>
+      <td>{{musica.year}}</td>
+    </tr>
+  </tbody>
+</table>
