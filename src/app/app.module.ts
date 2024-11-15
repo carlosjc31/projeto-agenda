@@ -6,11 +6,13 @@ import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { TabelaAgendaComponent } from './tabela-agenda/tabela-agenda.component';
 import { HttpClientModule } from '@angular/common/http';
+import { FormularioAgendaComponent } from './formulario-agenda/formulario-agenda.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TabelaAgendaComponent
+    TabelaAgendaComponent,
+    FormularioAgendaComponent
   ],
   imports: [
     BrowserModule,

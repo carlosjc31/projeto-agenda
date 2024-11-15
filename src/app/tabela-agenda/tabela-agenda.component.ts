@@ -18,5 +18,10 @@ export class TabelaAgendaComponent {
       this.agendas = data;
     });
   }
+  loadAgendas(): void {
+    this.agendasService.getAgendas().subscribe(data => {
+      this.agendas = data;
+    });
+  }
 
 }
