@@ -1,3 +1,5 @@
+
+import { AgendasService } from '../agendas.service';
 import { agenda } from './../agenda';
 import { Component } from '@angular/core';
 
@@ -7,8 +9,14 @@ import { Component } from '@angular/core';
   styleUrl: './tabela-agenda.component.css'
 })
 export class TabelaAgendaComponent {
-  agendas: agenda[] = [
-    
-  ]
+  agendas: agenda[] = [];
+
+  constructor(private agendasService: AgendasService) { }
+
+  ngOnInit(): void {
+    this.agendasService.getAgendas().subscribe(data =>{
+      this.agendas = data;
+    });
+  }
 
 }
