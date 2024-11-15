@@ -3,20 +3,18 @@
       <tr>
           <th scope="col">ID</th>
           <th scope="col">Título</th>
-          <th scope="col">Nota</th>
-          <th scope="col">Artista</th>
-          <th scope="col">Gênero</th>
-          <th scope="col">Ano</th>
+          <th scope="col">Descrição</th>
+          <th scope="col">Data/Hora</th>
+          <th scope="col">Local</th>
       </tr>
   </thead>
   <tbody>
-    <tr *ngFor="let musica of musicas">
-      <th scope="row">{{musica.id}}</th>
-      <td>{{musica.name}}</td>
-      <td>{{musica.note}}</td>
-      <td>{{musica.category}}</td>
-      <td>{{musica.artist}}</td>
-      <td>{{musica.year}}</td>
+    <tr *ngFor="let agenda of agendas">
+      <th scope="row">{{agenda.id}}</th>
+      <td>{{agenda.titulo}}</td>
+      <td>{{agenda.descricao}}</td>
+      <td>{{agenda.data_hora}}</td>
+      <td>{{agenda.local}}</td>
     </tr>
   </tbody>
 </table>
