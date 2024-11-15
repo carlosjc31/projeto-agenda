@@ -1,3 +1,4 @@
+import { agenda } from './../agenda';
 import { Component } from '@angular/core';
 
 @Component({
@@ -6,5 +7,8 @@ import { Component } from '@angular/core';
   styleUrl: './tabela-agenda.component.css'
 })
 export class TabelaAgendaComponent {
+  agendas: agenda[] = [
+    
+  ]
 
 }

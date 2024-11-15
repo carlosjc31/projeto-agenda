@@ -1,0 +1,32 @@
+{
+  "agendas": [
+{
+  "id": 1,
+  "titulo": "Prova 2",
+  "descricao": "Prova de Des. Web",
+  "data_hora":"2024-11-25 T 08:00:00",
+  "local": "Lab. 6"
+},
+{
+  "id": 2,
+  "titulo": "Trabalho SO II",
+  "descricao": "Entrega do trabalho de SO II",
+  "data_hora": "2024-11-27 T 09:30:00",
+  "local": "Lab. 6"
+},
+{
+  "id": 3,
+  "titulo": "Prova 2",
+  "descricao": "Prova de estatística",
+  "data_hora": "2024-11-25 T 08:00:00",
+  "local": "Lab. 4"
+},
+{
+  "id": 4,
+  "titulo": "Projeto Agenda",
+  "descricao": "Apresentação do projeto de agenda",
+  "data_hora": "2024-12-10 T 08:00:00",
+  "local": "Lab. 6"
+}
+  ]
+}
