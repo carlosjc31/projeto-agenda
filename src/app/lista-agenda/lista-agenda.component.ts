@@ -21,5 +21,16 @@ export class ListaAgendaComponent implements OnInit{
     });
   }
 
+  delete(Agenda: Agenda): void{
+    this.agendaService.delete(Agenda).subscribe({
+      next: () => this.loadAgendas()
+    });
+  }
+
+  loadAgendas(): void {
+    this.agendaService.getAgenda().subscribe(data =>{
+      this.agendas = data
+    });
+  }
 
 }
