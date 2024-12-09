@@ -13,11 +13,12 @@ import { AgendaService } from '../agenda.service';
 export class FormAgendaComponent implements OnInit {
 
   formGroupAgenda: FormGroup;
-  service: any;
+  isEditing: boolean = false;
+
 
   constructor(private router: Router,
-              private agendaService: AgendaService,
               private activatedRouter: ActivatedRoute,
+              private service: AgendaService,
               private formBuilder: FormBuilder) {
     this.formGroupAgenda = this.formBuilder.group({
       id:          [''],
