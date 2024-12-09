@@ -5,11 +5,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ListaAgendaComponent } from './lista-agenda/lista-agenda.component';
 import { HttpClientModule } from '@angular/common/http';
+import { FormAgendaComponent } from './form-agenda/form-agenda.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ListaAgendaComponent
+    ListaAgendaComponent,
+    FormAgendaComponent
   ],
   imports: [
     BrowserModule,
