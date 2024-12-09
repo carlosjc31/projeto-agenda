@@ -8,12 +8,16 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormAgendaComponent } from './form-agenda/form-agenda.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ReactiveFormsModule } from '@angular/forms';
+import { HomeComponent } from './home/home.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ListaAgendaComponent,
-    FormAgendaComponent
+    FormAgendaComponent,
+    HomeComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
