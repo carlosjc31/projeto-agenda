@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { AgendaService } from '../agenda.service';
 import { Agenda } from './../agenda';
 import { Component, OnInit } from '@angular/core';
@@ -13,7 +14,9 @@ export class ListaAgendaComponent implements OnInit{
 
   agendas: Agenda[] = [];
 
-  constructor(private agendaService: AgendaService) { }
+  constructor(private agendaService: AgendaService,
+              private router: Router
+  ) { }
 
   ngOnInit(): void {
     this.agendaService.getAgenda().subscribe( data =>{
@@ -31,6 +34,10 @@ export class ListaAgendaComponent implements OnInit{
     this.agendaService.getAgenda().subscribe(data =>{
       this.agendas = data
     });
+  }
+
+  create(){
+    this.router.navigate(['/agenda']);
   }
 
 }
