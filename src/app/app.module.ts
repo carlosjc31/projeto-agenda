@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { ListaAgendaComponent } from './lista-agenda/lista-agenda.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormAgendaComponent } from './form-agenda/form-agenda.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { FormAgendaComponent } from './form-agenda/form-agenda.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    NgbModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

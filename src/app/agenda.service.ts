@@ -15,8 +15,14 @@ export class AgendaService {
     return this.http.get<Agenda[]>(this.url);
   }
 
+  getAgendaById(id: number): Observable<Agenda> {
+    return this.http.get<Agenda>(`${this.url}/${id}`);
+  }
+
   delete(agenda: Agenda): Observable<void> {
     return this.http.delete<void>(`${this.url}/${agenda.id}`);
   }
+
+
 
 }
